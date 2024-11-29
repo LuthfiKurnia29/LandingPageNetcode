@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import About from './components/About';
+
+// const links = [
+//   { name: 'Open roles', href: '#' },
+//   { name: 'Internship program', href: '#' },
+//   { name: 'Our values', href: '#' },
+//   { name: 'Meet our leadership', href: '#' },
+// ]
+// const stats = [
+//   { name: 'Offices worldwide', value: '12' },
+//   { name: 'Full-time colleagues', value: '300+' },
+//   { name: 'Hours per week', value: '40' },
+//   { name: 'Paid time off', value: 'Unlimited' },
+// ]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <About />
     </div>
   );
 }
